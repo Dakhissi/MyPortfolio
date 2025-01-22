@@ -1,0 +1,113 @@
+{
+    "general": {
+        "name": "Abdessalam Dakhissi",
+        "headline": "Software Engineer",
+        "about": [
+            "Hey there! 👋",
+            "I'm Abdessalam, a software engineer based in Morocco. I'm passionate about building software that makes a difference.",
+            "I'm currently working at P2SLINK where i build and maintain entreprise software solutions."
+        ],
+        "socials": {
+            "email": "dakhissi.abdessalam@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/abdessalam-dakhissi-b13302223/",
+            "github": "https://github.com/Dakhissi"
+        }
+    },
+    "experiences": [
+        {
+            "title": "Software Engineer",
+            "company": "P2SLINK",
+            "href": "",
+            "startDate": "09/2023",
+            "endDate": "CURRENT",
+            "description": "Work on multiple entreprise software solutions varying from Network management system to CRM applications , I also work in Ai technolgoies and NLP projects.",
+            "logo": "/logo.png",
+            "skills": ["Spring Boot", "React", "Django", "Docker", "Kubernetes", "NLP", "AI"]
+        },
+        {
+            "title": "Supervision B2B",
+            "company": "Inwi",
+            "href": "",
+            "startDate": "02/2022",
+            "endDate": "09/2023",
+            "description": "Worked on the supervision of the B2B network of Inwi, I was responsible for the monitoring of the network and the resolution of incidents.",
+            "logo": "/inwi.png",
+            "skills": ["Network", "Monitoring", "Incident Resolution"]
+        },
+        {
+            "title": "Freelancer Software Developer",
+            "company": "Dowslake Technologies",
+            "href": "",
+            "startDate": "04/2022",
+            "endDate": "12/2022",
+            "description": "Developed a full stack web application for a client in France ",
+            "logo": "/dowslake.svg",
+            "skills": ["Spring Boot", "React", "Docker" , "Java", "Javascript"]
+        },
+        {
+            "title": "Freelancer Software Developer",
+            "company": "P2SLINK",
+            "href": "",
+            "startDate": "11/2021",
+            "endDate": "10/2022",
+            "description": "Work as part of a team to develop a WMS solution for a major client in Africa",
+            "logo": "/logo.png",
+            "skills": ["Laravel", "Blade", "MySQL", "PHP"]
+        }
+    ],
+    "education": [
+        {
+            "subject": "Master",
+            "degree": "Software Engineering",
+            "university": "IT Learning ",
+            "href": "",
+            "startDate": "2025", 
+            "endDate": "NOW", 
+            "description": ""
+        },
+        {
+            "subject": "Licence",
+            "degree": "Computer Science",
+            "university": "University of Moulay Ismail , FST Errachidia",
+            "href": "",
+            "startDate": "2018", 
+            "endDate": "2022", 
+            "description": ""
+        }
+    ],
+    "volunteering": [
+        
+    ],
+    "projects": [
+        {
+            "name": "NMS (Network Management System)",
+            "framework": "Spring Boot",
+            "description": "a SNMP based network management system that allows you to monitor your network devices and get alerts in case of failure.",
+            "href": ""
+        },
+        {
+            "name": "Medical AI",
+            "framework": "Rasa and OpenAI",
+            "description": "A chatbot that allows you to get medical advice and book appointments with doctors.",
+            "href": ""
+        },
+        {
+            "name": "Bug Tracker",
+            "framework": "Laravel",
+            "description": "A simple and easy to use bug tracking system wiht integrated AI assistant.",
+            "href": "https://github.com/Dakhissi/bug-tracker-laravel"
+        },
+       {
+            "name": "Simple todo app",
+            "framework": "Next.js",
+            "description": "very basic todo app with a simple UI",
+            "href": "https://github.com/Dakhissi/simple-todo-app"
+       },
+       {
+        "name": "GeoMedical",
+        "framework": "React ts",
+        "description": "A simple web app that allows you to find the nearest medical center , the app is not under maintenance ",
+        "href": ""
+        } 
+    ]
+}
