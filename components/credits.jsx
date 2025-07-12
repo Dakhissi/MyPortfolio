@@ -1,23 +1,27 @@
 import React from "react";
 
 const Credits = (props) => {
-        return (
-        <div data-section id='credits' className='group mt-32'>
-            <div className='text-surface-600'>
-                <div className='mb-4'>
-                    This website is built based on Karl Grossmann , Sarah Dayan and Brittany Chiang's templates using Next.js and Tailwind CSS .
-                    {/* This website was built using a <a href="https://github.com/karlgrossmann/two-column-portfolio" target="_blank" rel="noopener noreferrer" className="text-on-background transition-all hover:text-primary-500">template</a> by <a href="https://karlgrossmann.com" target="_blank" rel="noopener noreferrer" className="text-on-background transition-all hover:text-primary-500">Karl Grossmann</a> using <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-on-background transition-all hover:text-primary-500">Next.js</a> and 
-                    <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="text-on-background transition-all hover:text-primary-500"> Tailwind CSS</a>. 
-                    The inspiration for the design comes from <a href="https://www.sarahdayan.dev" target="_blank" rel="noopener noreferrer" className="text-on-background transition-all hover:text-primary-500">Sarah Dayan </a> 
-                    and <a href="https://brittanychiang.com" target="_blank" rel="noopener noreferrer" className="text-on-background transition-all hover:text-primary-500">Brittany Chiang</a>.  */}
+    return (
+        <footer data-section id='credits' className='mt-16 pt-8 border-t border-surface-300/30'>
+            <div className='text-slate-400 text-sm space-y-4'>
+                <div className='leading-relaxed'>
+                    Built with ❤️ using{' '}
+                    <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-primary-300 hover:text-primary-200 transition-colors duration-200">Next.js</a>
+                    {' '}and{' '}
+                    <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="text-primary-300 hover:text-primary-200 transition-colors duration-200">Tailwind CSS</a>.
+                    {' '}Design inspired by{' '}
+                    <a href="https://www.sarahdayan.dev" target="_blank" rel="noopener noreferrer" className="text-primary-300 hover:text-primary-200 transition-colors duration-200">Sarah Dayan</a>
+                    {' '}and{' '}
+                    <a href="https://brittanychiang.com" target="_blank" rel="noopener noreferrer" className="text-primary-300 hover:text-primary-200 transition-colors duration-200">Brittany Chiang</a>.
                 </div>
-                <div className='flex flex-row justify-between'>
-                    {/* <a href="/imprint" rel="noopener noreferrer" className="scroll-auto transition-all hover:text-on-background">Imprint</a>
-                    <a href="/privacy" rel="noopener noreferrer" className="scroll-auto transition-all hover:text-on-background">Privacy Statement</a> */}
-                    <span>{props.data.name} | 2025</span>
+                <div className='flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-2'>
+                    <span className='text-slate-500'>© {new Date().getFullYear()} {props.data.name}. All rights reserved.</span>
+                    <div className='flex space-x-4 text-xs'>
+                        <a href="#about" className="text-slate-400 hover:text-primary-200 transition-colors duration-200">Back to top</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

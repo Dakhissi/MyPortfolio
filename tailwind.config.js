@@ -6,110 +6,36 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-
     extend: {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        /* ::: CHANGE COLORS :::
-        *   You can change the colors of this template. Just uncomment a color below and comment the default color.
-        *   If you want to create your own color palette, go to https://colorffy.com/dark-theme-generator and create your own color palette.
-        */ 
-       /* :: Color Palette: Purple and Dark Blue */
-        // 'primary': {
-        //   100: '#194bff',
-        //   200: '#525dff',
-        //   300: '#7170ff',
-        //   400: '#8b83ff',
-        //   500: '#a197ff',
-        //   600: '#b6abff'
-        // },
-        // 'surface': {
-        //   100: '#07022e',
-        //   200: '#1f1e42',
-        //   300: '#393658',
-        //   400: '#524f6e',
-        //   500: '#6d6a84',
-        //   600: '#89869c',
-        // },
-        // 'on-background': '#ffffff',
-        /* */
-        /* :: Color Palette: Yellow and Dark Grey
+        // Modern Professional Color Palette: Blue and Dark Navy
         'primary': {
-          100: '#ffc107',
-          200: '#ffc83b',
-          300: '#ffce58',
-          400: '#ffd572',
-          500: '#ffdc8a',
-          600: '#ffe3a2'
+          100: '#3b82f6',
+          200: '#60a5fa',
+          300: '#93c5fd',
+          400: '#bfdbfe',
+          500: '#dbeafe',
+          600: '#eff6ff'
+        },
+        'accent': {
+          100: '#10b981',
+          200: '#34d399',
+          300: '#6ee7b7',
+          400: '#9deccc',
+          500: '#c6f6d5',
+          600: '#d1fae5'
         },
         'surface': {
-          100: '#121212',
-          200: '#282828',
-          300: '#3f3f3f',
-          400: '#575757',
-          500: '#717171',
-          600: '#8b8b8b'
+          100: '#0f172a',
+          200: '#1e293b',
+          300: '#334155',
+          400: '#475569',
+          500: '#64748b',
+          600: '#94a3b8'
         },
-        'on-background': '#ffffff',
-        */  
-        /* :: Color Palette: Orange and Dark Blue
-        'primary': {
-          100: '#ff6b35',
-          200: '#ff7d4b',
-          300: '#ff8f61',
-          400: '#ff9f77',
-          500: '#ffb08c',
-          600: '#ffc0a3'
-        },
-        'surface': {
-          100: '#07022e',
-          200: '#1f1e42',
-          300: '#393658',
-          400: '#524f6e',
-          500: '#6d6a84',
-          600: '#89869c'
-        },
-        'on-background': '#ffffff',
-        */
-        //  :: Color Palette: Green and Dark Blue
-        // 'primary': {
-        //   100: '#0b7a75',
-        //   200: '#378883',
-        //   300: '#549792',
-        //   400: '#6da5a1',
-        //   500: '#86b4b0',
-        //   600: '#9ec3bf'
-        // },
-        // 'surface': {
-        //   100: '#07022e',
-        //   200: '#1f1e42',
-        //   300: '#393658',
-        //   400: '#524f6e',
-        //   500: '#6d6a84',
-        //   600: '#89869c'
-        // },
-        // 'on-background': '#ffffff',
-        //  :: Color Palette: Red and Dark Blue
-        'primary': {
-          100: '#ff3f34',
-          200: '#ff5a4d',
-          300: '#ff6f63',
-          400: '#ff8479',
-          500: '#ff998e',
-          600: '#ffaea4'
-        },
-        'surface': {
-          100: '#07022e',
-          200: '#1f1e42',
-          300: '#393658',
-          400: '#524f6e',
-          500: '#6d6a84',
-          600: '#89869c'
-        },
-        'on-background': '#ffffff',
-
-        
+        'on-background': '#f8fafc',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

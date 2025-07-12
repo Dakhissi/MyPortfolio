@@ -5,26 +5,41 @@ import Experiences from "@/components/experiences/experiences";
 import Header from "@/components/header";
 import Volunteering from "@/components/volunteering/volunteering";
 import Projects from '@/components/projects/projects';
+import Skills from '@/components/skills';
 import Credits from '@/components/credits';
 import {promises as fs} from 'fs';
 
-export default async function Home() {
-  const file = await fs.readFile(process.cwd() + '/public/translations/en.json', 'utf-8');
-  const data = JSON.parse(file);
+export default async function Home({ searchParams }) {
+  const lang = searchParams?.lang || 'en';
+  
+  // Check if the language file exists, fall back to English if not
+  let data;
+  try {
+    const file = await fs.readFile(process.cwd() + `/public/translations/${lang}.json`, 'utf-8');
+    data = JSON.parse(file);
+  } catch (error) {
+    console.warn(`Language file ${lang}.json not found, falling back to English`);
+    const file = await fs.readFile(process.cwd() + '/public/translations/en.json', 'utf-8');
+    data = JSON.parse(file);
+  }
 
   return (
-    <main className="flex min-h-screen flex-col items-center py-24 px-6 lg:px-24">
-      <div className="z-2 w-full max-w-5xl font-mono text-sm flex flex-col lg:flex-row justify-between">
-        <Header data={data.general}></Header>
-        <div className='lg:pl-[50%]'>
-          <About data={data.general}></About>
-          <Experiences data={data.experiences}></Experiences>
-          <Education data={data.education}></Education>
-          {/* <Volunteering data={data.volunteering}></Volunteering> */}
-          <Projects data={data.projects}></Projects>
-          <Credits data={data.general}></Credits>
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <main className="flex min-h-screen flex-col lg:flex-row">
+        <div className="lg:w-1/3 lg:fixed lg:top-0 lg:left-0 lg:h-screen lg:overflow-y-auto lg:scrollbar-thin lg:scrollbar-thumb-slate-600 lg:scrollbar-track-slate-800">
+          <Header data={data.general} lang={lang} navigation={data.navigation}></Header>
         </div>
-      </div>
-    </main>
+        <div className="flex-1 lg:ml-[33.333333%] overflow-y-auto h-screen">
+          <div className='py-12 px-4 lg:px-8 space-y-16 lg:space-y-24 max-w-4xl mx-auto'>
+            <About data={data.general}></About>
+            <Experiences data={data.experiences}></Experiences>
+            <Skills data={data.skills}></Skills>
+            <Projects data={data.projects}></Projects>
+            <Education data={data.education}></Education>
+            <Credits data={data.general}></Credits>
+          </div>
+        </div>
+      </main>
+    </div>
   )
 }

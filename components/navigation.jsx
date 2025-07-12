@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import NavItem from "./nav-item";
 
-const Navigation = () => {
+const Navigation = ({ translations }) => {
     const [activeSection, setActiveSection] = useState(null);
     const observer = useRef(null);
 
@@ -29,13 +29,13 @@ const Navigation = () => {
     }, []);
 
     return (
-        <div id='navigation' className='flex flex-col py-10 font-medium tracking-widest'>
-            <NavItem active={activeSection === 'about' ? true : false} href='#about' num='01' name="ABOUT"></NavItem>
-            <NavItem active={activeSection === 'experiences' ? true : false} href='#experiences' num='02' name="EXPERIENCES"></NavItem>
-            <NavItem active={activeSection === 'education' ? true : false} href='#education' num='03' name="EDUCATION"></NavItem>
-            {/* <NavItem active={activeSection === 'volunteering' ? true : false} href='#volunteering' num='04' name="VOLUNTEERING"></NavItem> */}
-            <NavItem active={(activeSection === 'projects') || (activeSection === 'credits') ? true : false} href='#projects' num='04' name="PROJECTS"></NavItem>
-        </div>
+        <nav className='hidden lg:flex flex-col py-10 space-y-2'>
+            <NavItem active={activeSection === 'about' ? true : false} href='#about' name={translations?.about || "About"}></NavItem>
+            <NavItem active={activeSection === 'experiences' ? true : false} href='#experiences' name={translations?.experience || "Experience"}></NavItem>
+            <NavItem active={activeSection === 'skills' ? true : false} href='#skills' name={translations?.skills || "Skills"}></NavItem>
+            <NavItem active={activeSection === 'projects' ? true : false} href='#projects' name={translations?.projects || "Projects"}></NavItem>
+            <NavItem active={activeSection === 'education' ? true : false} href='#education' name={translations?.education || "Education"}></NavItem>
+        </nav>
     )
 }
 
