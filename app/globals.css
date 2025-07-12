@@ -19,20 +19,26 @@
   }
 
   h1 {
-    @apply text-4xl lg:text-5xl;
+    @apply text-2xl xs:text-3xl sm:text-4xl lg:text-5xl;
   }
 
   h2 {
-    @apply text-2xl lg:text-3xl;
+    @apply text-xl xs:text-2xl sm:text-2xl lg:text-3xl;
   }
 
   h3 {
-    @apply text-xl lg:text-2xl;
+    @apply text-lg xs:text-xl sm:text-xl lg:text-2xl;
   }
 
   /* Scrollbar styling */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
+  }
+
+  @media (min-width: 640px) {
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
   }
 
   ::-webkit-scrollbar-track {
@@ -86,6 +92,41 @@
 
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Mobile-specific utilities */
+  .touch-pan-y {
+    touch-action: pan-y;
+  }
+
+  .touch-pan-x {
+    touch-action: pan-x;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Better mobile tap targets */
+  .tap-highlight-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Safe area padding for mobile devices */
+  .safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-inset-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-area-inset-right {
+    padding-right: env(safe-area-inset-right);
   }
 }
 

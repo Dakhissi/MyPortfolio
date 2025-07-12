@@ -10,10 +10,10 @@ const LanguageSwitcher = ({ currentLang }) => {
     };
 
     return (
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1 sm:space-x-2">
             <button
                 onClick={() => switchLanguage('en')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 ${
+                className={`px-2 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-medium transition-colors duration-200 ${
                     currentLang === 'en' 
                         ? 'bg-blue-500 text-white' 
                         : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
@@ -23,7 +23,7 @@ const LanguageSwitcher = ({ currentLang }) => {
             </button>
             <button
                 onClick={() => switchLanguage('fr')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 ${
+                className={`px-2 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-medium transition-colors duration-200 ${
                     currentLang === 'fr' 
                         ? 'bg-blue-500 text-white' 
                         : 'bg-slate-700 text-slate-300 hover:bg-slate-600'

@@ -25,7 +25,7 @@ function ExperienceItem(props) {
                             <span className='text-slate-300 text-sm'>{props.startDate} - {props.endDate}</span>
                         </div>
                     </div>
-                    <p className='text-slate-300 leading-relaxed'>{props.description}</p>
+                    <p className='text-slate-300 leading-relaxed text-justify'>{props.description}</p>
                     <div className='flex flex-wrap gap-2'>
                         {props.skills ? props.skills.map(function(skill, index){
                             return (

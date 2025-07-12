@@ -24,7 +24,7 @@ function ProjectItem(props) {
                     {props.framework}
                 </div>
                 
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-slate-300 leading-relaxed text-justify">
                     {props.description}
                 </p>
                 
