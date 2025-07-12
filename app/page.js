@@ -21,8 +21,8 @@ export default async function Home({ searchParams }) {
           <Header data={data.general} lang={lang} navigation={data.navigation}></Header>
         </div>
         
-        {/* Main Content Section */}
-        <div className="flex-1 xl:ml-[33.333333%] overflow-y-auto h-screen">
+        {/* Main Content Section - Allow natural scrolling on mobile */}
+        <div className="flex-1 xl:ml-[33.333333%] xl:overflow-y-auto xl:h-screen">
           <div className='py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-12 space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20 xl:space-y-24 max-w-4xl mx-auto'>
             <About data={data.general} sectionTitle={data.sections?.about}></About>
             <Experiences data={data.experiences} sectionTitle={data.sections?.experience}></Experiences>
