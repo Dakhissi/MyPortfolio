@@ -7,21 +7,11 @@ import Volunteering from "@/components/volunteering/volunteering";
 import Projects from '@/components/projects/projects';
 import Skills from '@/components/skills';
 import Credits from '@/components/credits';
-import {promises as fs} from 'fs';
+import { loadTranslations } from '@/lib/translations';
 
 export default async function Home({ searchParams }) {
   const lang = searchParams?.lang || 'en';
-  
-  // Check if the language file exists, fall back to English if not
-  let data;
-  try {
-    const file = await fs.readFile(process.cwd() + `/public/translations/${lang}.json`, 'utf-8');
-    data = JSON.parse(file);
-  } catch (error) {
-    console.warn(`Language file ${lang}.json not found, falling back to English`);
-    const file = await fs.readFile(process.cwd() + '/public/translations/en.json', 'utf-8');
-    data = JSON.parse(file);
-  }
+  const data = await loadTranslations(lang);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -31,11 +21,11 @@ export default async function Home({ searchParams }) {
         </div>
         <div className="flex-1 lg:ml-[33.333333%] overflow-y-auto h-screen">
           <div className='py-12 px-4 lg:px-8 space-y-16 lg:space-y-24 max-w-4xl mx-auto'>
-            <About data={data.general}></About>
-            <Experiences data={data.experiences}></Experiences>
-            <Skills data={data.skills}></Skills>
-            <Projects data={data.projects}></Projects>
-            <Education data={data.education}></Education>
+            <About data={data.general} sectionTitle={data.sections?.about}></About>
+            <Experiences data={data.experiences} sectionTitle={data.sections?.experience}></Experiences>
+            <Skills data={data.skills} sectionTitle={data.sections?.skills}></Skills>
+            <Projects data={data.projects} sectionTitle={data.sections?.projects}></Projects>
+            <Education data={data.education} sectionTitle={data.sections?.education}></Education>
             <Credits data={data.general}></Credits>
           </div>
         </div>
