@@ -1,173 +1,203 @@
 {
-    "general": {
-        "name": "Abdessalam Dakhissi",
-        "headline": "Full-Stack Engineer & Systems Architect",
-        "location": "Casablanca, Morocco",
-        "status": "Open to relocation and on-site roles",
-        "phone": "+212 604 918 934",
-        "website": "dakhissi.top",
-        "about": [
-            "Hey there! 👋",
-            "I'm Abdessalam, a full-stack engineer and systems architect delivering production-grade software independently—from concept and UX to backend, DevOps, and AI integration.",
-            "Currently pursuing dual Master's degrees in Software Engineering and Information Systems Management while leading engineering at P2SLINK, where I deliver SaaS platforms across WMS, NMS, medical systems, and AI automation.",
-            "I'm passionate about building software that makes a real difference and solving complex technical challenges. Fluent in Arabic, English, and French."
-        ],
-        "summary": "Full-stack engineer and systems architect delivering production-grade software independently—from concept and UX to backend, DevOps, and AI integration. Currently pursuing dual Master's degrees in Software Engineering and Information Systems Management. Solo engineering lead at P2SLINK, delivering SaaS platforms across WMS, NMS, medical systems, and AI automation.",
-        "socials": {
-            "email": "dakhissi.abdessalam@gmail.com",
-            "linkedin": "https://www.linkedin.com/in/abdessalam-dakhissi-b13302223/",
-            "github": "https://github.com/Dakhissi"
-        }
-    },
-    "navigation": {
-        "about": "About",
-        "experience": "Experience",
-        "education": "Education",
-        "projects": "Projects",
-        "skills": "Skills",
-        "contact": "Contact"
-    },
-    "sections": {
-        "about": "About",
-        "experience": "Experience",
-        "education": "Education",
-        "projects": "Projects",
-        "skills": "Technical Skills",
-        "contact": "Contact"
-    },
-    "experiences": [
-        {
-            "title": "Lead Software Engineer / Systems Architect",
-            "company": "P2SLINK (Dowslake Micro)",
-            "href": "",
-            "startDate": "Sep 2023",
-            "endDate": "Present",
-            "description": "Sole developer for full software stack across multiple SaaS platforms. Built WMS in Laravel + Docker Compose with monitoring via Prometheus/Grafana. Developed TR-069 auto-config server using Spring Boot & ActiveMQ. Created SNMP-based network dashboard using React + Spring Boot. Built medical app with Django + React + JWT + RabbitMQ. Integrated AI assistant using LangChain/OpenAI for ticket triage. Led interns and planned 2-week Scrum sprints with CI/CD automation via GitHub Actions.",
-            "logo": "/logo.png",
-            "skills": ["Spring Boot", "Laravel", "React", "Django", "Docker", "Prometheus", "Grafana", "ActiveMQ", "RabbitMQ", "JWT", "LangChain", "OpenAI", "GitHub Actions", "SNMP", "TR-069"]
-        },
-        {
-            "title": "Network Support Specialist",
-            "company": "INWI",
-            "href": "",
-            "startDate": "Feb 2022",
-            "endDate": "Sep 2023",
-            "description": "Monitored client networks and responded to incidents under strict SLAs via ServiceNow. Delivered high-level B2B technical support ensuring optimal network performance and reliability.",
-            "logo": "/inwi.png",
-            "skills": ["Network Monitoring", "ServiceNow", "B2B Support", "SLA Management", "Incident Resolution"]
-        },
-        {
-            "title": "Freelancer Software Developer",
-            "company": "Dowslake Technologies",
-            "href": "",
-            "startDate": "Apr 2022",
-            "endDate": "Dec 2022",
-            "description": "Developed a full-stack web application for a client in France, delivering end-to-end solutions with modern web technologies.",
-            "logo": "/dowslake.svg",
-            "skills": ["Spring Boot", "React", "Docker", "Java", "JavaScript", "Full-Stack Development"]
-        },
-        {
-            "title": "Freelancer Software Developer",
-            "company": "P2SLINK",
-            "href": "",
-            "startDate": "Nov 2021",
-            "endDate": "Oct 2022",
-            "description": "Collaborated on developing a Warehouse Management System (WMS) for a major client in Africa, contributing to team-based enterprise solution development.",
-            "logo": "/logo.png",
-            "skills": ["Laravel", "Blade", "MySQL", "PHP", "WMS", "Enterprise Solutions"]
-        }
+  "general": {
+    "name": "Abdessalam Dakhissi",
+    "headline": "Full-Stack Engineer & Systems Architect",
+    "location": "Casablanca, Morocco",
+    "status": "Focused on current role",
+    "phone": "+212 604 918 934",
+    "website": "dakhissi.top",
+    "about": [
+      "Hey there! 👋",
+      "I'm Abdessalam, a full-stack engineer and systems architect who builds production-grade software from the ground up—from UX and frontend development to backend architecture, DevOps pipelines, and AI integration.",
+      "I currently work as a Senior Software Engineer at Kiosk360 while also completing dual Master's degrees in Software Engineering and Information Systems Management. Previously, I led engineering at P2SLINK, delivering SaaS platforms across WMS, NMS, medical systems, and AI automation.",
+      "I enjoy tackling complex technical challenges and building systems that create real-world impact. Fluent in Arabic, English, and French."
     ],
-    "education": [
-        {
-            "subject": "Master's",
-            "degree": "Information Systems Management",
-            "university": "Université de Pau et des Pays de l'Adour (UPPA), France",
-            "href": "",
-            "graduationDate": "Sep 2025", 
-            "description": "Focus: Security, system modelling, IT urbanisation"
-        },
-        {
-            "subject": "Master's",
-            "degree": "Software Engineering",
-            "university": "ENSI, Morocco",
-            "href": "",
-            "graduationDate": "Jul 2025", 
-            "description": "Advanced software engineering principles and practices"
-        },
-        {
-            "subject": "Bachelor's",
-            "degree": "Software Engineering",
-            "university": "FST Errachidia, Morocco",
-            "href": "",
-            "graduationDate": "2022", 
-            "description": "Foundation in computer science and software development"
-        }
-    ],
-    "volunteering": [
-        
-    ],
-    "projects": [
-        {
-            "name": "Web-Based Flight Simulator",
-            "framework": "JSBSim, Three.js, Svelte, FastAPI",
-            "description": "Advanced flight dynamics simulation with PS4 controller input and 2D/3D mapping visualization. Ongoing project showcasing complex real-time systems integration.",
-            "href": "",
-            "status": "In Development",
-            "tags": ["3D Graphics", "Real-time Systems", "Game Development", "Physics Simulation"]
-        },
-        {
-            "name": "Network Management System",
-            "framework": "Spring Boot, React",
-            "description": "Comprehensive SNMP-based network monitoring system with modular architecture. Features real-time device monitoring, alert management, and performance analytics dashboard.",
-            "href": "",
-            "status": "Master's Capstone",
-            "tags": ["Network Monitoring", "Enterprise Software", "Real-time Analytics", "SNMP"]
-        },
-        {
-            "name": "AI-Powered Bug Tracker",
-            "framework": "Laravel, OpenAI",
-            "description": "Intelligent bug tracking system with NLP-powered classification and automated priority assignment. Features AI-assisted ticket triage and performance benchmarking.",
-            "href": "https://github.com/Dakhissi/bug-tracker-laravel",
-            "status": "Production",
-            "tags": ["AI/ML", "NLP", "Project Management", "Automation"]
-        },
-        {
-            "name": "AI Project Manager",
-            "framework": "LangChain, React",
-            "description": "Proof-of-concept application that generates automated task breakdowns and project updates using advanced AI agents and workflow automation.",
-            "href": "",
-            "status": "POC",
-            "tags": ["AI Agents", "Workflow Automation", "Project Management", "LangChain"]
-        },
-        {
-            "name": "Medical AI Assistant",
-            "framework": "Django, React, RabbitMQ",
-            "description": "AI-powered medical consultation platform with appointment booking, symptom analysis, and doctor recommendations. Built with robust messaging architecture.",
-            "href": "",
-            "status": "Production",
-            "tags": ["Healthcare", "AI/ML", "Real-time Messaging", "Medical Tech"]
-        },
-        {
-            "name": "Warehouse Management System",
-            "framework": "Laravel, Docker, Prometheus",
-            "description": "Enterprise-grade WMS with real-time inventory tracking, automated workflows, and comprehensive monitoring via Prometheus and Grafana.",
-            "href": "",
-            "status": "Production",
-            "tags": ["Enterprise Software", "DevOps", "Monitoring", "Logistics"]
-        }
-    ],
-    "skills": {
-        "languages": ["Java", "Python", "JavaScript/TypeScript", "PHP", "C#", "C", "Bash", "SQL"],
-        "frontend": ["React", "Svelte", "Redux", "Next.js", "Three.js", "Tailwind", "Flutter", "Angular"],
-        "backend": ["Spring Boot", "Django REST", "FastAPI", "Laravel", "Node/Express", "REST", "GraphQL"],
-        "messaging": ["ActiveMQ", "RabbitMQ", "Kafka"],
-        "ai": ["LangChain", "LangGraph", "OpenAI API", "NLP", "Rasa", "Botpress", "ML", "n8n", "MCP"],
-        "databases": ["MySQL", "PostgreSQL", "MongoDB", "FaunaDB", "Redis", "Oracle DBA"],
-        "devops": ["Docker", "GitHub Actions", "Jenkins", "Grafana", "Prometheus", "Nginx", "Tomcat", "Apache"],
-        "security": ["JWT", "OAuth2", "RBAC", "TLS/HTTPS", "SNMP", "TR-069/CWMP"],
-        "testing": ["JUnit", "Mockito", "Jest", "Cypress"],
-        "architecture": ["Microservices", "Modular SaaS", "DDD", "ERP/CRM"],
-        "concepts": ["SOLID", "Event Driven Architecture", "Clean Architecture", "MVC", "System Design", "Multi-tenancy & SaaS Strategy", "End-to-End Product Ownership"],
-        "workflow": ["Agile/Scrum", "Sprint Planning", "Team Leadership"]
+    "summary": "Full-stack engineer and systems architect delivering scalable, production-grade systems end-to-end. Currently working as a Senior Software Engineer at Kiosk360 while completing dual Master's degrees in Software Engineering and Information Systems Management.",
+    "socials": {
+      "email": "dakhissi.abdessalam@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/abdessalam-dakhissi-b13302223/",
+      "github": "https://github.com/Dakhissi"
     }
+  },
+
+  "navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Technical Skills",
+    "contact": "Contact"
+  },
+
+  "experiences": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Kiosk 360",
+      "href": "",
+      "startDate": "Oct 2025",
+      "endDate": "Present",
+      "description": "Building production-grade systems using MERN, .NET microservices, and Electron. Contributed to payment system integrations, service design, system architecture decisions, and code quality improvements. Delivered CI/CD with GitHub Actions and optimized deployment infrastructure using Cloudflare Tunnel, secure VPC setups, and PostgreSQL.",
+      "logo": "/kiosk360.png",
+      "skills": ["MERN Stack", ".NET", "Microservices", "Payment Integration", "Electron", "Software Infrastructure", "Code Review", "GitHub Actions", "Cloudflare Tunnel", "VPC Services", "PostgreSQL", "Clover Payment Provider", "CSG Forte Payment Provider"]
+    },
+    {
+      "title": "Lead Software Engineer / Systems Architect",
+      "company": "P2SLINK (Dowslake Micro)",
+      "href": "",
+      "startDate": "Sep 2023",
+      "endDate": "Nov 2025",
+      "description": "Sole engineer responsible for full lifecycle delivery across multiple SaaS platforms. Delivered a WMS using Laravel + Docker + Prometheus/Grafana, a TR-069 auto-configuration server using Spring Boot & ActiveMQ, and an SNMP-based network dashboard using React + Spring Boot. Built a medical platform with Django + React + RabbitMQ and integrated an AI-based ticket triage assistant using LangChain and OpenAI. Managed interns and organized bi-weekly Scrum sprints with CI/CD automation.",
+      "logo": "/logo.png",
+      "skills": ["Spring Boot", "Laravel", "React", "Django", "Docker", "Prometheus", "Grafana", "ActiveMQ", "RabbitMQ", "JWT", "LangChain", "OpenAI", "GitHub Actions", "SNMP", "TR-069"]
+    },
+    {
+      "title": "Network Support Specialist",
+      "company": "INWI",
+      "href": "",
+      "startDate": "Feb 2022",
+      "endDate": "Sep 2023",
+      "description": "Monitored enterprise networks and resolved incidents under strict SLAs. Delivered B2B technical support through ServiceNow and ensured reliability and performance across critical client infrastructures.",
+      "logo": "/inwi.png",
+      "skills": ["Network Monitoring", "ServiceNow", "B2B Support", "SLA Management", "Incident Resolution"]
+    },
+    {
+      "title": "Freelancer Software Developer",
+      "company": "Dowslake Technologies",
+      "href": "",
+      "startDate": "Apr 2022",
+      "endDate": "Dec 2022",
+      "description": "Built a full-stack web application for a French client, delivering backend, frontend, and containerized deployment with modern engineering practices.",
+      "logo": "/dowslake.svg",
+      "skills": ["Spring Boot", "React", "Docker", "Java", "JavaScript", "Full-Stack Development"]
+    },
+    {
+      "title": "Freelancer Software Developer",
+      "company": "P2SLINK",
+      "href": "",
+      "startDate": "Nov 2021",
+      "endDate": "Oct 2022",
+      "description": "Contributed to the development of a Warehouse Management System (WMS) for a major African client, participating in backend development and system design.",
+      "logo": "/logo.png",
+      "skills": ["Laravel", "Blade", "MySQL", "PHP", "WMS", "Enterprise Solutions"]
+    }
+  ],
+
+  "education": [
+    {
+      "subject": "Master's",
+      "degree": "Information Systems Management",
+      "university": "Université de Pau et des Pays de l'Adour (UPPA), France",
+      "href": "",
+      "graduationDate": "Sep 2025",
+      "description": "Focus areas: security, system modelling, IT urbanisation"
+    },
+    {
+      "subject": "Master's",
+      "degree": "Software Engineering",
+      "university": "ENSI, Morocco",
+      "href": "",
+      "graduationDate": "Jul 2025",
+      "description": "Advanced principles of software engineering and system architecture"
+    },
+    {
+      "subject": "Bachelor's",
+      "degree": "Software Engineering",
+      "university": "FST Errachidia, Morocco",
+      "href": "",
+      "graduationDate": "2022",
+      "description": "Foundation in computer science and software development"
+    }
+  ],
+
+  "projects": [
+    {
+        "name": "Agentic LLM Drone Pilot Framework",
+        "framework": "Python, LLMs, MQTT, WebSockets, Raspberry Pi",
+        "description": "Concept-phase control framework for autonomous and semi-autonomous drones using an Event, Check, Act operating model. Designed to combine LLM reasoning with modular hardware capabilities, real-time safety layers, and a unified communication protocol known as L2LP. Features modular plug-and-play packages, strategic LLM planning, embedded rule-based fallback, and fully validated action execution.",
+        "href": "",
+        "status": "Concept Phase",
+        "tags": [
+            "LLM Agents",
+            "Autonomous Systems",
+            "Robotics",
+            "Protocol Design",
+            "Safety Engineering",
+            "Embedded Systems",
+            "AI Planning",
+            "Event Driven Architecture"
+        ]
+    },
+    {
+      "name": "Web-Based Flight Simulator",
+      "framework": "JSBSim, Three.js, Svelte, FastAPI",
+      "description": "Advanced flight simulation engine with PS4 controller input, real-time physics, and 2D/3D visualizations. Demonstrates integration of complex real-time systems.",
+      "href": "",
+      "status": "In Development",
+      "tags": ["3D Graphics", "Real-time Systems", "Game Development", "Physics Simulation"]
+    },
+    {
+      "name": "Network Management System",
+      "framework": "Spring Boot, React",
+      "description": "SNMP-based network monitoring system with modular architecture, real-time device insights, alerting, and performance analytics.",
+      "href": "",
+      "status": "Master's Capstone",
+      "tags": ["Network Monitoring", "Enterprise Software", "Real-time Analytics", "SNMP"]
+    },
+    {
+      "name": "AI-Powered Bug Tracker",
+      "framework": "Laravel, OpenAI",
+      "description": "Bug tracking platform featuring NLP-powered classification, automated priority scoring, and AI-assisted ticket triage.",
+      "href": "https://github.com/Dakhissi/bug-tracker-laravel",
+      "status": "Production",
+      "tags": ["AI/ML", "NLP", "Project Management", "Automation"]
+    },
+    {
+      "name": "AI Project Manager",
+      "framework": "LangChain, React",
+      "description": "Proof-of-concept AI system that generates task breakdowns, progress summaries, and workflow automation using multi-agent architectures.",
+      "href": "",
+      "status": "POC",
+      "tags": ["AI Agents", "Workflow Automation", "Project Management", "LangChain"]
+    },
+    {
+      "name": "Medical AI Assistant",
+      "framework": "Django, React, RabbitMQ",
+      "description": "Healthcare platform offering AI-assisted consultations, appointment scheduling, symptom analysis, and real-time messaging.",
+      "href": "",
+      "status": "Production",
+      "tags": ["Healthcare", "AI/ML", "Real-time Messaging", "Medical Tech"]
+    },
+    {
+      "name": "Warehouse Management System",
+      "framework": "Laravel, Docker, Prometheus",
+      "description": "Enterprise WMS with real-time inventory tracking, automated workflows, and integrated monitoring using Prometheus and Grafana.",
+      "href": "",
+      "status": "Production",
+      "tags": ["Enterprise Software", "DevOps", "Monitoring", "Logistics"]
+    }
+  ],
+
+  "skills": {
+    "languages": ["Java", "Python", "JavaScript/TypeScript", "PHP", "C#", "C", "Bash", "SQL"],
+    "frontend": ["React", "Svelte", "Redux", "Next.js", "Three.js", "Tailwind", "Flutter", "Angular"],
+    "backend": ["Spring Boot", "Django REST", "FastAPI", "Laravel", "Node/Express", "REST", "GraphQL"],
+    "messaging": ["ActiveMQ", "RabbitMQ", "Kafka"],
+    "ai": ["LangChain", "LangGraph", "OpenAI API", "NLP", "Rasa", "Botpress", "ML", "n8n", "MCP"],
+    "databases": ["MySQL", "PostgreSQL", "MongoDB", "FaunaDB", "Redis", "Oracle DBA"],
+    "devops": ["Docker", "GitHub Actions", "Jenkins", "Grafana", "Prometheus", "Nginx", "Tomcat", "Apache"],
+    "security": ["JWT", "OAuth2", "RBAC", "TLS/HTTPS", "SNMP", "TR-069/CWMP"],
+    "testing": ["JUnit", "Mockito", "Jest", "Cypress"],
+    "architecture": ["Microservices", "Modular SaaS", "DDD", "ERP/CRM"],
+    "concepts": ["SOLID", "Event Driven Architecture", "Clean Architecture", "MVC", "System Design", "Multi-tenancy & SaaS Strategy", "End-to-End Product Ownership"],
+    "workflow": ["Agile/Scrum", "Sprint Planning", "Team Leadership"]
+  }
 }
